@@ -1,0 +1,32 @@
+@danger: #ff0000;
+
+.createColor(@primary-color, @mix-color) {
+  --danger: @danger;
+  --danger-80: fade(@danger, 60%);
+
+  // 主色相关
+  --primary: @primary-color;
+  --primary-90: mix(@primary-color, @mix-color, 90%);
+  --primary-80: mix(@primary-color, @mix-color, 80%);
+  --primary-70: mix(@primary-color, @mix-color, 70%);
+  --primary-60: mix(@primary-color, @mix-color, 60%);
+  --primary-50: mix(@primary-color, @mix-color, 50%);
+  --primary-40: mix(@primary-color, @mix-color, 40%);
+  --primary-30: mix(@primary-color, @mix-color, 30%);
+  --primary-20: mix(@primary-color, @mix-color, 20%);
+  --primary-10: mix(@primary-color, @mix-color, 10%);
+
+  --primary-fade-90: fade(@primary-color, 90%);
+  --primary-fade-80: fade(@primary-color, 80%);
+  --primary-fade-70: fade(@primary-color, 70%);
+  --primary-fade-60: fade(@primary-color, 60%);
+  --primary-fade-50: fade(@primary-color, 50%);
+  --primary-fade-40: fade(@primary-color, 40%);
+  --primary-fade-30: fade(@primary-color, 30%);
+  --primary-fade-24: fade(@primary-color, 24%);
+  --primary-fade-20: fade(@primary-color, 20%);
+  --primary-fade-16: fade(@primary-color, 16%);
+  --primary-fade-12: fade(@primary-color, 12%);
+  --primary-fade-10: fade(@primary-color, 10%);
+  --primary-fade-8: fade(@primary-color, 8%);
+}

@@ -1,0 +1,39 @@
+@emptyImageOssPath: "https://trias-cloud.oss-cn-shenzhen.aliyuncs.com/common/emptyStateDiagram";
+
+// 空态图片
+.createEmptyImage(@mode) {
+  // 403
+  --forbidden: url("@{emptyImageOssPath}/@{mode}/403.png");
+  // 404
+  --not-found: url("@{emptyImageOssPath}/@{mode}/404.png");
+  // 500
+  --server-error: url("@{emptyImageOssPath}/@{mode}/500.png");
+  // 未启用流程
+  --flow-image: url("@{emptyImageOssPath}/@{mode}/notEnableFlow.png");
+  // 固定流程
+  --fixed-flow-image: url("@{emptyImageOssPath}/@{mode}/fixedFlow.png");
+  // 创建表单成功
+  --form-success-image: url("@{emptyImageOssPath}/@{mode}/createFormSuccess.png");
+  // 登录过期
+  --login-expired-image: url("@{emptyImageOssPath}/@{mode}/loginExpired.png");
+  // 分享过期
+  --share-expired-image: url("@{emptyImageOssPath}/@{mode}/shareExpired.png");
+  // 暂无表单
+  --empty-image: url("@{emptyImageOssPath}/@{mode}/noForm.png");
+  // 暂无数据
+  --empty-home-image: url("@{emptyImageOssPath}/@{mode}/noData.png");
+  // 暂无列表
+  --empty-list-image: url("@{emptyImageOssPath}/@{mode}/noList.png");
+  // 搜索为空
+  --empty-search-image: url("@{emptyImageOssPath}/@{mode}/emptySearch.png");
+  // 拖拽配置
+  --empty-drag-image: url("@{emptyImageOssPath}/@{mode}/dragSetting.png");
+  // 暂无权限
+  --empty-permission-image: url("@{emptyImageOssPath}/@{mode}/permissionDenied.png");
+  // 暂无收藏
+  --empty-favorite-image: url("@{emptyImageOssPath}/@{mode}/noFavorite.png");
+  // 暂无下载
+  --empty-download-image: url("@{emptyImageOssPath}/@{mode}/noDownload.png");
+  // 暂无消息
+  --empty-message-image: url("@{emptyImageOssPath}/@{mode}/noMessage.png");
+}

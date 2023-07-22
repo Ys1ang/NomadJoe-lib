@@ -1,0 +1,138 @@
+// 浅色
+@import "../utils/color.less";
+@import "../utils/empty.less";
+
+.tint(@primary-color) {
+  // 可操作、点击文字
+  --font-active: @primary-color;
+  // 鼠标滑过文字
+  --font-hover: mix(@primary-color, #fff, 80%);
+  --font-active-light: @primary-color;
+  --inline-menu-active: fade(@primary-color, 10%);
+  .createColor(@primary-color, #ffffff);
+}
+.tint[class^="theme"] {
+  // 文字颜色
+  --font: #333333;
+  --font-sub: #666666;
+  --font-info: #999999;
+  // 辅助文字
+  --font-color-secondary: #cccccc;
+  // 提示性文字
+  --font-color-info: #ff0000;
+
+  // 删除按钮/文字
+  --delete: #fe5959;
+  // 警示色
+  --warning: #ff9900;
+  // 操作成功
+  --success: #00c361;
+
+  // 标签
+  --tag: #f3f6fc;
+
+  // 功能模块底色
+  --block-bg: #ffffff;
+  // 普通分割线
+  --border: #eeeeee;
+  --border-fade-20: fade(#eeeeee, 20%);
+  --border-fade-15: fade(#eeeeee, 15%);
+  // 表单组件分割线
+  --form-border: #eaeaea;
+  // 表格内分割线
+  --table-border: #dee2e6;
+
+  // 不通用的颜色
+  // 主页背景
+  --home-bg: var(--primary-10);
+  // 功能模块背景（主页、自定义）
+  --main-bg: #ffffff;
+  // 最底部背景
+  --body-bg: #f1f1f1;
+  // 顶部导航栏（一级）
+  --nav-bg: #ffffff;
+  // 左侧导航栏（一级）
+  --inline-menu-bg: #ffffff;
+  // 左侧导航栏展开（二级）
+  --inline-menu-sub-bg: #ffffff;
+
+  // 抽屉菜单左侧背景
+  --drawer-menu-main: #ffffff;
+  // 抽屉菜单右侧弹出背景
+  --drawer-menu-toggle: #f6f6f6;
+  // 抽屉菜单右侧弹出阴影
+  --drawer-menu-toggle-shadow: 0 0 0 12px #cacaca;
+
+  // 遮罩层
+  --mask: fade(#000000, 50%);
+
+  // 弹窗
+  // 弹窗背景
+  --modal-bg: #ffffff;
+  // 弹窗标题背景（一级）
+  --modal-header-bg: #f5f5f5;
+  // 阴影
+  --modal-shadow: 0px 0px 14px 0px #9f9f9f;
+
+  // 下拉框（一级）
+  --dropdown-bg: #ffffff;
+  // 阴影
+  --dropdown-shadow: rgba(226, 226, 226, 0.6);
+
+  // 表单部分
+  // 禁用
+  --form-disabled: #f5f7fa;
+
+  // 列表部分
+  // 划过列表（一级）
+  --list-hover: #f5f5f5;
+  // 选中列表（一级）
+  --list-active: #e9e9e9;
+
+  // 表格部分
+  // 表格头部（二级）
+  --table-header-bg: var(--primary-fade-8);
+  // 表格分行（二级）
+  --table-row: #ffffff;
+  --table-row-stripe: #fafafa;
+  // 滑过表格（二级）
+  --table-row-hover: var(--primary-fade-12);
+  // 选中表格（二级）
+  --table-row-active: var(--primary-fade-20);
+  --table-color: #666666;
+
+  // 默认按钮
+  --btn-border: #cccccc;
+  --btn-color: #999999;
+  --btn-hover-bg: #cccccc;
+  --btn-hover-color: #666666;
+
+  // 滚动条
+  --scroll-bg: rgba(247, 247, 247, 0.95);
+  --scroll-track: #e3e3e3;
+  // 步骤条
+  --steps-bg: #cccccc;
+  --steps-line: fade(#cccccc, 30);
+
+  --shadow: #e1e1e1;
+
+  // 收缩箭头背景
+  --arrows-bg: #efefef;
+  ::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.1);
+    background-color: var(--scroll-track);
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--scroll-bg);
+    box-shadow: 0 0 7px var(--scroll-track) inset;
+  }
+
+  .createEmptyImage('tint');
+}

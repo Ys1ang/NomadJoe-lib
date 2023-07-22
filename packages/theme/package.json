@@ -1,0 +1,14 @@
+{
+  "name": "@NomadJoe/theme",
+  "version": "1.0.0",
+  "description": "皮肤变量",
+  "author": "YangS1",
+  "main": "dist/index.css",
+  "scripts": {
+    "build": "lessc src/index.less dist/index.css",
+    "prepublishOnly": "pnpm run build"
+  },
+  "devDependencies": {
+    "less": "^4.1.3"
+  }
+}

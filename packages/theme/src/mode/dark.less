@@ -1,0 +1,139 @@
+// 暗色
+@import "../utils/color.less";
+@import "../utils/empty.less";
+
+.dark(@primary-color) {
+  // 可操作、点击文字
+  --font-active: @primary-color;
+  // 鼠标滑过文字
+  --font-hover: mix(@primary-color, #fff, 80%);
+
+  .createColor(@primary-color, #2f2f2f);
+}
+
+.dark[class^="theme"] {
+  // 文字颜色
+  --font: #cccccc;
+  --font-sub: #999999;
+  --font-info: #666666;
+  // 辅助文字
+  --font-color-secondary: #aaaaaa;
+  // 提示性文字
+  --font-color-info: #ff2d2d;
+  --font-active-light: #ffffff;
+
+  // 删除按钮/文字
+  --delete: #fe5959;
+  // 警示色
+  --warning: #ff9900;
+  // 操作成功
+  --success: #19be6b;
+
+  // 标签
+  --tag: rgba(255, 255, 255, 0.1);
+
+  // 功能模块底色
+  --block-bg: #2f2f2f;
+  // 普通分割线
+  --border: #3f3f3f;
+  --border-fade-20: fade(rgb(153, 153, 153), 20%);
+  --border-fade-15: fade(rgb(153, 153, 153), 15%);
+  // 表单组件分割线
+  --form-border: #4b4b4b;
+  // 表格内分割线
+  --table-border: #5a5a5a;
+  // 不通用的颜色
+  // 主页背景
+  --home-bg: #363636;
+  // 功能模块背景（主页、自定义）
+  --main-bg: #444444;
+  // 最底部背景
+  --body-bg: #212121;
+  // 顶部导航栏（一级）
+  --nav-bg: #353535;
+  // 左侧导航栏（一级）
+  --inline-menu-bg: #2f2f2f;
+  // 左侧导航栏展开（二级）
+  --inline-menu-sub-bg: #272727;
+  --inline-menu-active: fade(#ffffff, 20%);
+
+  // 抽屉菜单左侧背景
+  --drawer-menu-main: #313131;
+  // 抽屉菜单右侧弹出背景
+  --drawer-menu-toggle: #2c2c2c;
+  // 抽屉菜单右侧弹出阴影
+  --drawer-menu-toggle-shadow: 0 0 0 12px #252525;
+
+  // 遮罩层
+  --mask: fade(#000000, 50%);
+
+  // 弹窗
+  // 弹窗背景
+  --modal-bg: #2a2a2a;
+  // 弹窗标题背景（一级）
+  --modal-header-bg: #404040;
+  // 阴影
+  --modal-shadow: 0px 0px 14px 0px #232323;
+
+  // 下拉框（一级）
+  --dropdown-bg: #3a3a3a;
+  // 阴影
+  --dropdown-shadow: #2b2a2a;
+
+  // 表单部分
+  // 禁用
+  --form-disabled: fade(#ffffff, 6%);
+
+  // 列表部分
+  // 划过列表（一级）
+  --list-hover: fade(#ffffff, 10%);
+  // 选中列表（一级）
+  --list-active: fade(#ffffff, 20%);
+
+  // 表格部分
+  // 表格头部（二级）
+  --table-header-bg: fade(#ffffff, 8%);
+  // 表格分行（二级）
+  --table-row: #2f2f2f;
+  --table-row-stripe: fade(#ffffff, 8%);
+  // 滑过表格（二级）
+  --table-row-hover: fade(#ffffff, 12%);
+  // 选中表格（二级）
+  --table-row-active: fade(#ffffff, 20%);
+  --table-color: mix(#cccccc, #ffffff, 90%);
+
+  // 默认按钮
+  --btn-border: #666666;
+  --btn-color: #999999;
+  --btn-hover-bg: #666666;
+  --btn-hover-color: #cccccc;
+
+  // 滚动条
+  --scroll-bg: #5b5b5b;
+  --scroll-track: #909090;
+
+  // 步骤条
+  --steps-bg: #666666;
+  --steps-line: fade(#cccccc, 20);
+
+  // 收缩箭头背景
+  --arrows-bg: #4c4c4c;
+
+  --shadow: #232323;
+
+  ::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.1);
+    background-color: var(--scroll-track);
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--scroll-bg);
+    box-shadow: 0 0 7px var(--scroll-track) inset;
+  }
+  .createEmptyImage("dark");
+}
