@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "HarmonyUI",
   description: "A VitePress Site",
-  base: "/harmony/",
+  base: "/NomadJoe-lib/",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
